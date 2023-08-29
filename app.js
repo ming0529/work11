@@ -21,7 +21,7 @@ app.use((req, res, next) => {
     });
   });
 
-connect(process.env.DB_CONNECTION)
+connect('mongodb+srv://121smmmj:UD1gBfhOfHC0RyUJ@cluster1.sgk6bhh.mongodb.net/?retryWrites=true&w=majority')
   .then(result => {
     app.listen(8080);
   })
