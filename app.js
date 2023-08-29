@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import express from 'express';
 import pkg from 'body-parser';
 const { json } = pkg;
@@ -18,7 +21,7 @@ app.use((req, res, next) => {
     });
   });
 
-connect('mongodb+srv://121smmmj:UD1gBfhOfHC0RyUJ@cluster1.sgk6bhh.mongodb.net/?retryWrites=true&w=majority')
+connect(process.env.DB_CONNECTION)
   .then(result => {
     app.listen(8080);
   })
