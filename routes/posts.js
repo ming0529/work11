@@ -68,8 +68,6 @@ router.get('/posts/:_postId', (req, res, next) => {
     
     SchemaIndex.Post.findOne({postId : postId})
     .then((post)=>{
-        console.log('hi')
-        console.log(post)
         res.status(200).json({
             data : {
                 postId :post.postId,
