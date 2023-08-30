@@ -1,6 +1,4 @@
-import { Schema as _Schema, model } from 'mongoose';
-
-const Schema = _Schema;
+import { Schema, model } from 'mongoose';
 
 const commentSchema = new Schema({
     commentId : {
