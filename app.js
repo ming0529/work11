@@ -4,10 +4,9 @@ dotenv.config();
 import express from 'express';
 import { json } from 'body-parser';
 import { connect } from 'mongoose';
+import routes from './routes/index.js';
 
 const app = express();
-
-import routes from './routes/index.js';
 
 app.use(json());
 
