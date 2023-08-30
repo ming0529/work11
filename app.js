@@ -2,8 +2,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import express from 'express';
-import pkg from 'body-parser';
-const { json } = pkg;
+import { json } from 'body-parser';
 import { connect } from 'mongoose';
 
 const app = express();
